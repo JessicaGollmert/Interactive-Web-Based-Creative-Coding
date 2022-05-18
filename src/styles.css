@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-image: url("./background/starfall.gif");
+  color: rgb(255, 255, 255);
+  font-family: Copperplate, fantasy;
+  font-size: 18px;
+  line-height: 25px;
+  overscroll-behavior: none;
+}
+
+a {
+  color: #ff0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+canvas {
+  display: block;
+}
+
+#info {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+a,
+button,
+input,
+select {
+  pointer-events: auto;
+}
+
+.dg.ac {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 2 !important;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 2;
+  top: 450px;
+  left: 850px;
+  display: flex;
+  align-items: center;
+}
+
+#overlay button {
+  background: rgba(255, 255, 255, 0.63);
+  border: 1;
+  color: #000000;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#text blockquote {
+  color: rgb(144, 228, 228);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+#logo {
+  z-index: 2;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+#notSupported {
+  width: 50%;
+  margin: auto;
+  background-color: #f00;
+  margin-top: 20px;
+  padding: 10px;
+}
